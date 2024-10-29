@@ -1,1 +1,1 @@
-# AI-Essentials
+# AI Essentials
