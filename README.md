@@ -40,6 +40,10 @@ Welcome to the "AI Essentials" project, which showcases the implementation of se
   for the best move.
 
 
+## Collaboration
+This project was a collaborative effort. Special thanks to [SpanouMaria](https://github.com/SpanouMaria) for their significant contributions to the development and improvement of the project.
+
+
 ## How to Run
 - Clone the Repository:
   ```bash
