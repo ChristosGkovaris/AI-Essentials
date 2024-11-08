@@ -22,6 +22,7 @@ public class AStarAlgorithmWithoutManhattan {
         boolean isGoal() {
             return Arrays.deepEquals(board, goalState);
         }
+
         
         // Misplaced Tiles Heuristic
         private static int heuristic(int[][] board) {
@@ -36,6 +37,7 @@ public class AStarAlgorithmWithoutManhattan {
             return misplaced;
         }
     }
+
     
     // Perform A* Search
     public static void aStar(int[][] initialState) {
@@ -62,6 +64,7 @@ public class AStarAlgorithmWithoutManhattan {
         }
         System.out.println("No solution found.");
     }
+
     
     // Generates all successors for A*
     private static List<State> generateSuccessors(State state) {
