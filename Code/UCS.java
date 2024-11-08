@@ -2,6 +2,7 @@ import java.util.*;
 
 public class UCSAlgorithm {
     private static final int[][] goalState = {{0, 1, 2}, {3, 4, 5}, {6, 7, 8}};
+
     
     // Class to represent each state in the search
     static class State {
@@ -17,6 +18,7 @@ public class UCSAlgorithm {
             return Arrays.deepEquals(board, goalState);
         }
     }
+
     
     // Perform UCS
     public static void ucs(int[][] initialState) {
@@ -43,6 +45,7 @@ public class UCSAlgorithm {
         }
         System.out.println("No solution found.");
     }
+
     
     // Generates all successors for UCS
     private static List<State> generateSuccessors(State state) {
