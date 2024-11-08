@@ -8,20 +8,24 @@ public class AStarAlgorithm {
         int[][] board;
         int g; // Cost from start to the current state
         int h; // Heuristic cost to goal
+
         
         State(int[][] board, int g) {
             this.board = board;
             this.g = g;
             this.h = heuristic(board);
         }
+
         
         int getF() {
             return g + h;
         }
+
         
         boolean isGoal() {
             return Arrays.deepEquals(board, goalState);
         }
+
         
         // Manhattan Distance Heuristic
         private static int heuristic(int[][] board) {
@@ -39,6 +43,7 @@ public class AStarAlgorithm {
             return h;
         }
     }
+
     
     // Perform A* Search
     public static void aStar(int[][] initialState) {
@@ -65,6 +70,7 @@ public class AStarAlgorithm {
         }
         System.out.println("No solution found.");
     }
+
     
     // Generates all successors for A*
     private static List<State> generateSuccessors(State state) {
