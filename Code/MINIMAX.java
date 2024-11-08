@@ -8,11 +8,13 @@ public class MinimaxAlgorithm {
     private int currentPlayer = MAX; // Starts with MAX player
     private Map<String, Integer> memo = new HashMap<>(); // Memoization cache
 
+    
     public static void main(String[] args) {
         MinimaxAlgorithm game = new MinimaxAlgorithm();
         game.runGame();
     }
 
+    
     // Runs the game loop
     private void runGame() {
         initializeBoard();
@@ -51,6 +53,7 @@ public class MinimaxAlgorithm {
         scanner.close();
     }
 
+    
     // Determines the best move for MAX using Minimax
     private void bestMove() {
         int bestValue = Integer.MIN_VALUE;
@@ -75,6 +78,7 @@ public class MinimaxAlgorithm {
         System.out.println("Player MAX placed 'S' at (" + bestRow + ", " + bestCol + ")");
     }
 
+    
     // Minimax algorithm implementation
     private int minimax(int depth, boolean isMaximizing) {
         if (checkWin()) {
@@ -111,6 +115,7 @@ public class MinimaxAlgorithm {
         }
     }
 
+    
     // Initializes the board
     private void initializeBoard() {
         for (int i = 0; i < 3; i++) {
@@ -120,17 +125,20 @@ public class MinimaxAlgorithm {
         }
     }
 
+    
     // Checks if a move is valid
     private boolean canPlace(int row, int col, char letter) {
         return row >= 0 && row < 3 && col >= 0 && col < 3 && board[row][col] == EMPTY;
     }
 
+    
     // Checks for winning patterns
     private boolean checkWin() {
         String[] patterns = {"CSE", "ESC"};
         return checkLines(patterns);
     }
 
+    
     // Helper method to check rows, columns, and diagonals for win patterns
     private boolean checkLines(String[] patterns) {
         String rowString, colString, diag1 = "", diag2 = "";
@@ -156,6 +164,7 @@ public class MinimaxAlgorithm {
         return false;
     }
 
+    
     // Checks if the board is full
     private boolean isBoardFull() {
         for (int i = 0; i < 3; i++) {
@@ -167,6 +176,7 @@ public class MinimaxAlgorithm {
         return true;
     }
 
+    
     // Prints the current board state
     private void printBoard() {
         System.out.println("~board~");
