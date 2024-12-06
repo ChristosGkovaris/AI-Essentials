@@ -1,5 +1,5 @@
 # AI Essentials
-Welcome to the "AI Essentials" project, which showcases the implementation of several fundamental AI algorithms in Java. The repository includes four major algorithms: UCS, A* with Manhattan heuristic, A* without Manhattan heuristic, and MINIMAX.
+Welcome to the "AI Essentials" repository, which showcases the implementation of several fundamental AI algorithms in Java. The repository includes four major algorithms: UCS, A* with Manhattan heuristic, A* without Manhattan heuristic, and MINIMAX.
 
 
 ## Code Overview
