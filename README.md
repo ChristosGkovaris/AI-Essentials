@@ -3,22 +3,22 @@ Welcome to the "AI Essentials" project, which showcases the implementation of se
 
 
 ## Code Overview
-## UCS (Uniform Cost Search)
+**UCS (Uniform Cost Search)**
 - Objective: Solve the 8-puzzle problem by finding the optimal solution path with minimal 
   movement cost. UCS explores nodes based on their cumulative path cost, 
   ensuring the most cost-effective solution.
 
-## A* with Manhattan Distance
+**AStar with Manhattan Distance**
 - Objective: Solve the 8-puzzle problem using A* search with the Manhattan distance as the 
   heuristic function. This heuristic measures the minimum number of moves 
   needed by summing the horizontal and vertical distances of tiles from their goal positions.
 
-## A* without Manhattan Distance
+**AStar without Manhattan Distance**
 - Objective: Solve the 8-puzzle problem using A* with a simpler heuristic, counting the number 
   of misplaced tiles. This approach estimates the distance to the goal 
   state by tallying how many tiles are out of place.
 
-## MINIMAX
+**MINIMAX**
 - Objective: Implement a basic AI player using the Minimax algorithm for a game based on 
   maximizing or minimizing points in a 3x3 board game scenario. The AI player aims 
   to predict and counter the opponent’s moves to achieve optimal gameplay outcomes.
