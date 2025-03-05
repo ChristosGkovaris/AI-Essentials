@@ -1,8 +1,9 @@
 # AI Essentials
-Welcome to the "AI Essentials" repository, which showcases the implementation of several fundamental AI algorithms in Java. The repository includes four major algorithms: UCS, A* with Manhattan heuristic, A* without Manhattan heuristic, and MINIMAX.
+Welcome to the "AI Essentials" repository. This repository contains the implementation of several fundamental AI algorithms in Java. The repository includes four major algorithms: UCS, A* with Manhattan heuristic, A* without Manhattan heuristic, and MINIMAX.
 
 
-## Code Overview
+
+## Overview
 **UCS (Uniform Cost Search)**
 - Objective: Solve the 8-puzzle problem by finding the optimal solution path with minimal 
   movement cost. UCS explores nodes based on their cumulative path cost, 
@@ -24,6 +25,7 @@ Welcome to the "AI Essentials" repository, which showcases the implementation of
   to predict and counter the opponent’s moves to achieve optimal gameplay outcomes.
 
 
+
 ## Implementation Details
 - The **UCS** and **A*** algorithms for the 8-puzzle problem utilize priority queues and sets 
   to manage the explored and frontier states, ensuring efficiency in 
@@ -32,12 +34,6 @@ Welcome to the "AI Essentials" repository, which showcases the implementation of
   moves for maximizing and minimizing players, analyzing potential board states 
   for the best move.
 
-
-## How to Run
-- Clone the Repository:
-  ```bash
-     git clone https://github.com/ChristosGkovaris/AI-Essentials.git
-     cd AI-Essentials
 
 
 ## Collaboration
