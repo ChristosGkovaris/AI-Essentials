@@ -1,0 +1,4 @@
+Java >= 11
+JDK >= 11
+JRE >= 11
+Optional: Any IDE such as IntelliJ IDEA, Eclipse, or VS Code with Java Extension
